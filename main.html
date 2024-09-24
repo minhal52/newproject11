@@ -44,6 +44,7 @@
         content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
     <meta property="twitter:image" content="https://www.geekbudsdesigns.com/assets/img/logo/logo2.svg">
 
+<!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -54,7 +55,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jersey+10&family=Open+Sans:ital,
       wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;
       0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-          
+ <!-- scrollreveal -->
+ <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <style>
 
@@ -109,12 +111,13 @@
     </div>
 </section>
 
+
 <!-- services -->
     <div class="container" id="services1">
         <div class="service-wrapper">
             <div class="service" id="services">
                 <h1>Here's <span>What </span>We <span> <br>
-                    Have </span>For you...</h1>
+                    Have </span>For you...</h1></div>
                 <div class="cards">
                                   
 <div class="card">
@@ -364,9 +367,40 @@
     </div>
 
 </footer>
+<script>
+ScrollReveal({
+    reset: true, // Reset the animation when it goes out of view
+    distance: '60px', // Distance the elements will move
+    duration: 2500, // Animation duration
+    delay: 400, // Base delay for animations
+    mobile: true // Ensure ScrollReveal works on mobile
+});
+
+// Reveal settings for titles
+ScrollReveal().reveal('.hero-title', {
+    delay: 2000, // Delay for each element
+    origin: 'top', // Animation origin
+    opacity: 0, // Start with 0 opacity
+    duration: 1800, // Duration of the fade-in effect
+    easing: 'ease-in-out', // Easing for a smoother effect
+    viewFactor: 0.1 // Trigger when 10% of the element is in view
+});
+
+// Reveal settings for descriptions and buttons
+ScrollReveal().reveal('.hero-description, .hero-buttons', {
+    delay: 700,
+    origin: 'bottom',
+    opacity: 0,
+    duration: 1800,
+    easing: 'ease-in-out',
+    viewFactor: 0.1 // Ensure it triggers across all screen sizes
+});
+
+</script>
 <!-- =====================Script======================== -->
     <script src="assets/js/main.js"></script>
-  
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </body>
 </html>
 
